@@ -1,0 +1,36 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:66601}"
+      },
+      "title": "Burn me",
+      "description": [
+        {
+          "text": "You're a wizard Harry!"
+        }
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "first:talesofsilta/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"magik\"]}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

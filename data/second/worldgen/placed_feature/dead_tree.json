@@ -1,0 +1,17 @@
+{
+    "feature": "second:dead_tree",
+    "placement": [
+      {
+        "type": "minecraft:block_predicate_filter",
+        "predicate": {
+          "type": "minecraft:would_survive",
+          "state": {
+            "Name": "second:dead_tree",
+            "Properties": {
+              "stage": "0"
+            }
+          }
+        }
+      }
+    ]
+  }

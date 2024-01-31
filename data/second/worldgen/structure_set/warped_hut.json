@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "second:warped_hut",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 148251,
+      "spacing": 30,
+      "separation": 10
+    }
+  }
+  

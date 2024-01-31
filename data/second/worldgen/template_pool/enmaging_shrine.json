@@ -1,0 +1,15 @@
+{
+    "name": "second:enmaging_shrine",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors":"minecraft:empty",
+                "location": "second:enmaging_shrine"
+            },
+            "weight": 1
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+           
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Magical Lapis Lazuli",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{MagicGem:1,Enchantments:[{}]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+           
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Magical Lapis Lazuli",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{MagicGem:2,Enchantments:[{}]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+           
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Magical Lapis Lazuli",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{MagicGem:3,Enchantments:[{}]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+           
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Magical Lapis Lazuli",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{MagicGem:4,Enchantments:[{}]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+           
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Perfect Magical Lapis Lazuli",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{MagicGem:5,Enchantments:[{}]}"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:lapis_lazuli",
+                    "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": 1
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:lapis_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": 1
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:apply_bonus",
+      "enchantment": "minecraft:fortune",
+      "formula": "minecraft:ore_drops"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_sword"
+      },
+      "title": "No lives matter",
+      "description": "The Battle of the Nine Armies",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "first:talesofsilta/racesel",
+    "criteria": {
+      "human": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"human\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "lutuk": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"lutuk\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "xuluak": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"xuluak\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "qualak": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"qualak\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "renwik": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"renwik\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "skulkin": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"skulkin\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "cerglan": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"cerglan\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "chorusian": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"chorusian\"]}"
+              }
+            }
+          ]
+        }
+      },
+      "therwin": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"therwin\"]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "human"
+      ],
+      [
+        "lutuk"
+      ],
+      [
+        "xuluak"
+      ],
+      [
+        "qualak"
+      ],
+      [
+        "renwik"
+      ],
+      [
+        "skulkin"
+      ],
+      [
+        "cerglan"
+      ],
+      [
+        "chorusian"
+      ],
+      [
+        "therwin"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": false
+  }

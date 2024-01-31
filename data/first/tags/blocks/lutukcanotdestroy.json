@@ -1,0 +1,28 @@
+{
+    "values": [
+        "#first:liquids",
+        "#walls",
+        "#fence_gates",
+        "#fences",
+        "#trapdoors",
+        "#doors",
+        "#all_signs",
+        "bamboo",
+        "#crops",
+        "ladder",
+        "#banners",
+        "#beds",
+        "#buttons",
+        "redstone_wire",
+        "redstone_torch",
+        "torch",
+        "soul_torch",
+        "#campfires",
+        "#cauldrons",
+        "#cave_vines",
+        "#invalid_spawn_inside",
+        "bedrock",
+        "barrier",
+        "#slabs"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "stepping_on": {
+            "block": {
+              "tag": "minecraft:soul_fire_base_blocks"
+            }
+          },
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:netherite_sword"
+              ],
+              "nbt": "{CustomModelData:77701,dbmSword:1}"
+            }
+          }
+        }
+      }
+    ]
+  }
+  

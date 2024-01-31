@@ -1,0 +1,25 @@
+{
+    "values": [
+        "creeper",
+        "zombie",
+        "#skeletons",
+        "spider",
+        "husk",
+        "witch",
+        "silverfish",
+        "cave_spider",
+        "drowned",
+        "wither",
+        "wither_skeleton",
+        "zombified_piglin",
+        "piglin",
+        "hoglin",
+        "zoglin",
+        "iron_golem",
+        "snow_golem",
+        "vindicator",
+        "#raiders",
+        "#undead",
+        "#zombies"
+    ]
+}

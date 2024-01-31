@@ -1,0 +1,10 @@
+{
+    "values": [
+        "player",
+        "wither_skeleton",
+        "piglin",
+        "skeleton",
+        "giant",
+        "#zombies"
+    ]
+}

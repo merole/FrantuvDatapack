@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "second:plains_spring",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 20,
+        "separation": 8,
+        "salt": 10387312
+    }
+}

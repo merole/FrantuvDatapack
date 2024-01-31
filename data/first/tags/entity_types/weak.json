@@ -1,0 +1,24 @@
+{
+    "values": [
+        "minecraft:cow",
+        "pig",
+        "sheep",
+        "chicken",
+        "horse",
+        "donkey",
+        "llama",
+        "wandering_trader",
+        "villager",
+        "turtle",
+        "tropical_fish",
+        "trader_llama",
+        "strider",
+        "squid",
+        "sniffer",
+        "rabbit",
+        "salmon",
+        "camel",
+        "mooshroom",
+        "goat"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_sword",
+        "nbt": "{CustomModelData:11101}"
+      },
+      "title": "I have bigger hammer",
+      "description": "Kill The Forger and progress further"
+    },
+    "parent": "first:talesofsilta/basicspells",
+    "criteria": {
+      "kill": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:giant",
+                "nbt": "{Tags:[\"forger\"]}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

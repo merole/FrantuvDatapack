@@ -1,0 +1,107 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 2,
+          "max": 10
+        },
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 3
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:paper",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2,
+                  "max": 7
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:map"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:compass"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 30,
+                "treasure": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{cleanseScroll:1,CustomModelData:22205,display:{Name:'[{\"text\":\"Scroll of Cleansing\",\"italic\":false,\"color\":\"yellow\"}]'}}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{arrowsCall:1,CustomModelData:22202,display:{Name:'[{\"text\":\"Scroll of Arrows\",\"italic\":false,\"color\":\"yellow\"}]'}}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glow_ink_sac",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

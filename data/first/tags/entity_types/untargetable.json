@@ -1,0 +1,17 @@
+{
+    "values": [
+        "#arrows",
+        "area_effect_cloud",
+        "armor_stand",
+        "block_display",
+        "item_display",
+        "marker",
+        "interaction",
+        "text_display",
+        "potion",
+        "painting",
+        "item_frame",
+        "experience_orb"
+        
+    ]
+}

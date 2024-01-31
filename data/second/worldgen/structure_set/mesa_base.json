@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "second:mesa_base",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 30,
+        "separation": 17,
+        "salt": 5558874
+    }
+}

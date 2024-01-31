@@ -1,0 +1,9 @@
+execute as @s[tag=airMagik] at @s run function first:spellfc/mlvl9/air
+execute as @s[tag=earthMagik] at @s run function first:spellfc/mlvl9/earth
+execute as @s[tag=endMagik] at @s run function first:spellfc/mlvl9/end
+execute as @s[tag=fireMagik] at @s run function first:spellfc/mlvl9/fire
+execute as @s[tag=iceMagik] at @s run function first:spellfc/mlvl9/ice
+execute as @s[tag=skulkMagik] at @s run function first:spellfc/mlvl9/skulk
+execute as @s[tag=ustraMagik] at @s run function first:spellfc/mlvl9/ustra
+execute as @s[tag=waterMagik] at @s run function first:spellfc/mlvl9/water
+execute as @s[tag=witherMagik] at @s run function first:spellfc/mlvl9/wither

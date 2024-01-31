@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "uuu",
+      "XoX",
+      "XpX"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:bone_block"
+      },
+      "o": {
+        "item": "minecraft:lapis_block"
+      },
+      "u": {
+        "item": "minecraft:sculk"
+      },
+      "p": {
+        "item": "minecraft:sculk_shrieker"
+      }
+      
+    },
+    "result": {
+      "item": "minecraft:sculk_catalyst"
+    }
+  }
+  

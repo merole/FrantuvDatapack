@@ -1,0 +1,15 @@
+{
+    "name": "second:mountain_spring",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors":"minecraft:empty",
+                "location": "second:mountain_spring"
+            },
+            "weight": 1
+        }
+    ]
+}

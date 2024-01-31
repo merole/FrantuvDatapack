@@ -1,0 +1,4 @@
+summon drowned ~ ~ ~ {CustomName:'[{"text":"Triton"}]',Health:200,Tags:["boss","drowner"],HandItems:[{id:"trident",tag:{display:{Lore:['[{"text":"Maelstrom","italic":false,"color":"gray"}]']},Enchantments:[{}],maelstrom:1},Count:1}],HandDropChances:[0.8f,0.8f],ArmorItems:[{id:"leather_boots",tag:{Trim:{pattern:tide,material:copper},display:{color:1481884}},Count:1},{id:"leather_leggings",tag:{Trim:{pattern:tide,material:copper},display:{color:1481884}},Count:1},{id:"leather_chestplate",tag:{Trim:{pattern:tide,material:copper},display:{color:1481884}},Count:1},{id:"leather_helmet",tag:{Trim:{pattern:tide,material:copper},display:{color:1481884}},Count:1}],ArmorDropChances:[0f,0f,0f,0f],Attributes:[{Name:"generic.max_health",Base:200d}]}
+scoreboard players set @e[distance=..1,tag=drowner] SpellCD 200
+playsound entity.warden.emerge hostile @a ~ ~ ~
+

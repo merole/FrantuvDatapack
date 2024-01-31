@@ -1,0 +1,145 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{Tome:1}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Bergimalic",
+                  "color": "aqua",
+                  "italic": false
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:writable_book"
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 1,
+          "max": 4
+        },
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "name": "minecraft:bookshelf"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 14,
+            "name": "minecraft:ink_sac"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:paper",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 12
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 15
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{manaBurst:1,CustomModelData:22201,display:{Name:'[{\"text\":\"Scroll of Energy\",\"italic\":false,\"color\":\"yellow\"}]'}}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{cleanseScroll:1,CustomModelData:22205,display:{Name:'[{\"text\":\"Scroll of Cleansing\",\"italic\":false,\"color\":\"yellow\"}]'}}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{motivationScroll:1,CustomModelData:22204,display:{Name:'[{\"text\":\"Scroll of Hype\",\"italic\":false,\"color\":\"yellow\"}]'}} "
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{rainStone:1,CustomModelData:22203,display:{Name:'[{\"text\":\"Scroll of Thunder\",\"italic\":false,\"color\":\"yellow\"}]'}}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobweb",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 20
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

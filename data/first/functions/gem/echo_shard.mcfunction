@@ -1,0 +1,3 @@
+execute as @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:echo_shard"}]}] at @s run scoreboard players add @s manaTimer 2
+execute as @s[scores={manaTimer=1190..},nbt={Inventory:[{Slot:-106b,id:"minecraft:echo_shard"}]}] at @s anchored eyes run particle dust 0.031 0.267 0.447 0.8 ^.4 ^-1 ^.2 0.1 0.1 0.1 0.1 4 normal @a
+execute as @s[scores={manaTimer=1190..},nbt={Inventory:[{Slot:-106b,id:"minecraft:echo_shard"}]}] at @s run playsound block.sculk_catalyst.bloom player @s ~ ~ ~ 0.4

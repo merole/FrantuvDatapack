@@ -1,0 +1,30 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:lapis_block"
+      },
+      "title": "The tales of Silta",
+      "description": "The world awaits!",
+      "frame": "task",
+      "background": "minecraft:textures/block/bookshelf.png",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

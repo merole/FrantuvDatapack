@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "second:birch_outpost",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 18,
+        "separation": 10,
+        "salt": 5555132
+    }
+}

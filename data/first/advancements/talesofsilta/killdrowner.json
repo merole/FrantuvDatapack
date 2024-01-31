@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:trident",
+        "nbt": "{Enchantments:[{}]}"
+      },
+      "hidden": true,
+      "frame": "goal",
+      "title": "Lord of the 9 seas",
+      "description": "Kill Triton and conquer the oceans"
+    },
+    "parent": "first:talesofsilta/basicspells",
+    "criteria": {
+      "kill": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:drowned",
+                "nbt": "{Tags:[\"drowner\"]}"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

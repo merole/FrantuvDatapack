@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": [
+            "minecraft:phantom_membrane"
+          ]
+        },
+        "offhand": {
+          "items": [
+            "minecraft:gold_ingot"
+          ],
+          "nbt": "{ringbase:1}"
+        }
+      }
+    }
+  }
+  

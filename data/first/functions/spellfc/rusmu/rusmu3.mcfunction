@@ -1,0 +1,15 @@
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^ ^ ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^ ^1 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^ ^2 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^1 ^ ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^2 ^ ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^1 ^1 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^1 ^2 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^2 ^1 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^2 ^2 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^-1 ^ ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^-2 ^ ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^-1 ^1 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^-1 ^2 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^-2 ^1 ^ 0.4 0.4 0.4 0 10 normal @a
+execute as @s at @s run particle dust 0.875 0.843 0.494 1 ^-2 ^2 ^ 0.4 0.4 0.4 0 10 normal @a

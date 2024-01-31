@@ -1,0 +1,41 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "structure": "second:plains_spring"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "structure": "second:desert_spring"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "structure": "second:mountain_spring"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "location": {
+            "structure": "second:nether_spring"
+          }
+        }
+      }
+    ]
+  }

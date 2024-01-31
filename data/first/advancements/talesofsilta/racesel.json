@@ -1,0 +1,64 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:player_head"
+      },
+      "title": "The 9 nations",
+      "description": "Join one of the existing races!",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "first:talesofsilta/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"human\"]}"
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"lutuk\"]}"
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"xuluak\"]}"
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"qualak\"]}"
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"renwik\"]}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomPotionColor:1386810,custom_potion_effects:[{id:\"blindness\",duration:800}],display:{Name:'[\"\",{\"text\":\"Potion of Blindness\",\"italic\":false}]'}}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 4, 
+                  "min": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_potion",
+                "id": "minecraft:invisibility"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "random_sequence": "minecraft:entities/illusioner"
+  }
+  
