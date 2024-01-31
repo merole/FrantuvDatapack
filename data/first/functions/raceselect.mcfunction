@@ -1,0 +1,9 @@
+execute if entity @s[tag=human] at @s run function first:racefc/humantick
+execute if entity @s[tag=lutuk] at @s run function first:racefc/lutuktick
+execute if entity @s[tag=xuluak] at @s run function first:racefc/xuluaktick
+execute if entity @s[tag=renwik] at @s run function first:racefc/renwiktick
+execute if entity @s[tag=skulkin] at @s run function first:racefc/skulkintick
+execute if entity @s[tag=chorusian] at @s run function first:racefc/chorusiantick
+execute if entity @s[tag=therwin] at @s run function first:racefc/therwintick
+execute if entity @s[tag=qualak] at @s run function first:racefc/qualaktick
+execute if entity @s[tag=cerglan] at @s run function first:racefc/cerglantick

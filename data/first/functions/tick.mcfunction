@@ -152,16 +152,7 @@ execute as @e[tag=MP,type=area_effect_cloud] at @s if entity @e[distance=..1.5] 
 ##########################
 #####  Race modifs  ######
 ##########################
-execute as @a[tag=human] at @s run function first:racefc/humantick
-execute as @a[tag=lutuk] at @s run function first:racefc/lutuktick
-execute as @a[tag=xuluak] at @s run function first:racefc/xuluaktick
-execute as @a[tag=renwik] at @s run function first:racefc/renwiktick
-execute as @a[tag=skulkin] at @s run function first:racefc/skulkintick
-execute as @a[tag=chorusian] at @s run function first:racefc/chorusiantick
-execute as @a[tag=therwin] at @s run function first:racefc/therwintick
-execute as @a[tag=qualak] at @s run function first:racefc/qualaktick
-execute as @a[tag=cerglan] at @s run function first:racefc/cerglantick
-
+execute as @a at @s run function first:raceselect
 
 ##########################
 #####  Enmaging  #########
