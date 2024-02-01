@@ -1,17 +1,8 @@
 ##########################
 #####   HUD&base  ########
 ##########################
-execute as @a[tag=magik] at @s run function first:base/hud
-execute as @a[tag=op,tag=!magik] at @s run title @s actionbar [{"text":" \u0020   \u0020   \u0020   \u0020   \u0020   \u0020 \u0020 \u0020 \u0020","color":"#CCCC00"},{"score":{"name":"@s","objective":"mana"},"color":"#CCCC00"},{"text":"/","color":"#CCCC00"},{"score":{"name":"@s","objective":"Maxmana"},"color":"#CCCC00"},{"text":" \u2726","color":"#CCCC00"}]
-execute as @a[predicate=first:switches_spell,tag=magik] at @s run scoreboard players add @s counter1 1 
-execute as @a at @s run scoreboard players add @s OutOfWater 1
-execute as @a[scores={OutOfWater=-1200..},predicate=first:in_water] at @s run scoreboard players remove @s OutOfWater 10
-execute as @a at @s if score @s waterD matches 1.. run scoreboard players remove @s OutOfWater 1200
-execute as @a at @s if score @s waterD matches 1.. run tellraw @s[tag=qualak] {"text": "You feel refreshed!","color":"#00ccff"}
-execute as @a at @s if score @s waterD matches 1.. run scoreboard players remove @s waterD 1
-execute as @a[scores={OutOfWater=-1200..}] at @s if predicate first:rain if predicate first:check_sky run scoreboard players remove @s OutOfWater 10
+execute as @a at @s run function first hudandbase
 execute as @e[type=#first:sword_users] at @s run function first:base/health
-execute as @a[scores={Death=1..}] at @s run function first:base/death
 
 
 
@@ -30,23 +21,7 @@ execute as @a[tag= selectinRace, scores = {ChooseOp5 = 1..}] run function first:
 ##########################
 #####  Mana counter  #####
 ##########################
-execute as @a at @s run scoreboard players add @s manaTimer 1
-execute as @a[tag=xuluak] if score @s manaTimer matches 300..600 run scoreboard players add @s manaTimer 1
-execute as @a[tag= magik,predicate=first:spring] at @s run scoreboard players add @s manaTimer 1
-execute as @a[scores={manaTimer = 1200..}] run scoreboard players add @s mana 1
-execute as @a[scores={manaTimer = 1200..}] run scoreboard players set @s manaTimer 0
-execute as @a at @s if score @s mana > @s Maxmana run scoreboard players remove @s mana 1
-
-execute as @a[scores={mana = ..-1}] at @s run effect give @s nausea 5 1 true
-execute as @a[scores={mana = ..-5}] at @s run effect give @s slowness 1 1 true
-execute as @a[scores={mana = ..-7}] at @s run effect give @s poison 3 2 true
-execute as @a[scores={mana = ..-10}] at @s run effect give @s blindness 2 1 true
-execute as @a[scores={mana = ..-15}] at @s run effect give @s wither 2 1 true
-execute as @a[scores={mana = ..-20}] at @s run damage @s 1 bad_respawn_point
-execute as @a at @s run function first:mana/mana
-
-execute as @a at @s if score @s mana > @s Maxmana run particle flash ~ ~1 ~ 0 0 0 0 1 normal
-execute as @a at @s if score @s mana > @s Maxmana run playsound block.candle.extinguish player @a ~ ~ ~ 0.2 2
+execute as @a at @s run function first:manacounter
 
 #############
 ### Gems  ###
@@ -86,32 +61,13 @@ execute as @e[scores = {SpellCD = ..-1}] at @s run scoreboard players add @s Spe
 execute as @e[type=area_effect_cloud,tag=ect] at @s run function first:spellfc/ect/tick
 
 execute as @a[scores={SpellCD = 1..}] run function first:spellfc/magiccd
-execute as @a[scores={SpellCD = 0}] run function first:spellfc/magicenab
 execute as @e[scores={SpellCD = 0},tag=wallM] run function first:spellfc/rusmu/rusmu2
 
-execute as @a[tag=magik,predicate=first:has_wand,scores={WUse=1..}] at @s run function first:spellfc/cast
-execute as @a[predicate=first:switches_spell,predicate=first:has_wand_r,tag=magik] at @s if score @s counter1 matches 5 run function first:spellfc/sppick
-execute as @a[predicate=first:switches_spell,predicate=first:has_wand_l,tag=magik] at @s if score @s counter1 matches 5 run function first:spellfc/sppick_kontra
+#####
+execute as @a at @s run function first:spells
+#####
 
-execute as @a[tag=magik] at @s if score @s Mlvl < @s SPick run scoreboard players set @s SPick 1
-execute as @a[tag=magik] at @s if score @s SPick matches ..0 run execute as @s at @s store result score @s SPick run scoreboard players get @s Mlvl
-execute as @a[tag=magik,predicate=first:has_wand_r] at @s if score @s SPick matches 2 run scoreboard players set @s SPick 3
-execute as @a[tag=magik,predicate=first:has_wand_l] at @s if score @s SPick matches 2 run scoreboard players set @s SPick 1
-
-execute as @a[tag=magik,scores = {ect = 1..,SpellCD = 0}] at @s run function first:spellfc/ect/ect
-execute as @a[tag=chorusian,scores = {liosa_end = 1..,SpellCD = 0}] at @s run function first:spellfc/liosa/liosa_end
-execute as @a[tag=chorusian,scores = {liosa_world = 1..,SpellCD = 0}] at @s run function first:spellfc/liosa/liosa_world
-execute as @a[tag=chorusian,scores = {liosa_nether = 1..,SpellCD = 0}] at @s run function first:spellfc/liosa/liosa_nether
-execute as @a[tag=magik,scores = {nasa = 1..,SpellCD = 0}] at @s run function first:spellfc/nasa/nasa
-execute as @a[tag=magik,scores = {rusmu = 1..,SpellCD = 0}] at @s run function first:spellfc/rusmu/rusmu
-execute as @a[tag=magik,scores = {tesden = 1..,SpellCD = 0}] at @s run function first:spellfc/tesden/tesden
-execute as @a[tag=magik,scores = {geresu = 1..,SpellCD = 0}] at @s run function first:spellfc/geresu/geresu
-execute as @a[tag=magik,scores = {ptoca = 1..,SpellCD = 0}] at @s run function first:spellfc/ptoca/ptoca
-execute as @a[tag=magik,scores = {rumdu = 1..,SpellCD = 0}] at @s run function first:spellfc/rumdu/rumdu
-
-execute as @a[tag=magik,scores = {eraspha = 1..,SpellCD = 0}] at @s run function first:spellfc/mlvl8/eraspha
-execute as @a[tag=magik,scores = {telatu = 1..,SpellCD = 0}] at @s run function first:spellfc/mlvl9/telatu
-execute as @a[tag=magik,scores = {truodes = 1..,SpellCD = 0}] at @s run function first:spellfc/mlvl10/truodes
+execute as @e[scores={SpellCD = 0},tag=wallM] run function first:spellfc/rusmu/rusmu2
 
 execute as @e[type=area_effect_cloud,tag=AirTelatu] at @s run function first:spellfc/mlvl9/airaec
 execute as @e[type=area_effect_cloud,tag=EarthTelatu] at @s run function first:spellfc/mlvl9/earthaec
@@ -157,22 +113,8 @@ execute as @a at @s run function first:raceselect
 ##########################
 #####  Enmaging  #########
 ##########################
+execute as @a[tag=magik] at @s run function enmaging
 execute as @a[tag=!magik] at @s if predicate first:enmaging run function first:enmaging/enmaging
-execute as @a[tag=magik] at @s as @e[type=item,nbt={Item:{id:"minecraft:stick"}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:emerald",tag:{MagicGem:5}}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/wandcreme
-execute as @a[tag=magik] at @s as @e[type=item,nbt={Item:{id:"minecraft:stick"}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:lapis_lazuli",tag:{MagicGem:5}}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/wandcrlap
-execute as @a[tag=magik] at @s as @e[type=item,nbt={Item:{id:"minecraft:stick"}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:quartz",tag:{MagicGem:5}}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/wandcrqua
-
-execute as @a[tag=magik] at @s as @e[type=item,nbt={Item:{id:"minecraft:paper"}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:glow_ink_sac"}}] if block ~ ~-1 ~ lectern run function first:enmaging/scrolls/energy
-execute as @a[tag=magik] at @s as @e[type=item,nbt={Item:{id:"minecraft:paper"}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:golden_apple"}}] if block ~ ~-1 ~ lectern run function first:enmaging/scrolls/hype
-
-execute as @a[tag=magik,scores={Mlvl= 1}] at @s as @e[type=item,nbt={Item:{id:"minecraft:milk_bucket"}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:glistering_melon_slice"}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/base/nasa
-execute as @a[tag=magik,scores={Mlvl= 2}] at @s as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",tag:{rusmu:1}}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:shield"}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/base/rusmu
-execute as @a[tag=magik,scores={Mlvl= 3}] at @s as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",tag:{tesden:1}}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:totem_of_undying"}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/base/tesden
-execute as @a[tag=magik,scores={Mlvl= 4}] at @s as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",tag:{geresu:1}}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:wither_skeleton_skull"}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/base/geresu
-execute as @a[tag=magik,scores={Mlvl= 5}] at @s as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",tag:{ptoca:1}}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:end_crystal"}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/base/ptoca
-execute as @a[tag=magik,scores={Mlvl= 6}] at @s as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",tag:{rumdu:1}}},distance=..5] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:nether_star"}}] if block ~ ~-1 ~ enchanting_table run function first:enmaging/base/rumdu
-
-execute as @a[tag=magik,scores={Mlvl= 7}] at @s if block ~ ~-.6 ~ enchanting_table run function first:enmaging/lvlup/lvlup1
 
 
 ##########################
